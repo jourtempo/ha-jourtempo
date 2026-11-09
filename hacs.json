@@ -1,0 +1,6 @@
+{
+  "name": "Jour Tempo",
+  "homeassistant": "2024.11.0",
+  "country": ["FR"],
+  "render_readme": true
+}

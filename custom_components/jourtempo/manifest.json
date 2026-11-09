@@ -1,0 +1,13 @@
+{
+  "domain": "jourtempo",
+  "name": "Jour Tempo",
+  "codeowners": ["@jourtempo"],
+  "config_flow": true,
+  "documentation": "https://github.com/jourtempo/ha-jourtempo",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/jourtempo/ha-jourtempo/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "1.0.0"
+}

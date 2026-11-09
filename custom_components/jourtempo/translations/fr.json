@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Jour Tempo",
+        "description": "Couleur Tempo et jour EJP d'aujourd'hui et de demain, depuis l'API gratuite de jourtempo.fr. Aucune clé ni compte : validez pour ajouter les capteurs."
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de joindre jourtempo.fr. Vérifiez la connexion internet de Home Assistant puis réessayez."
+    },
+    "abort": {
+      "already_configured": "Jour Tempo est déjà configuré.",
+      "single_instance_allowed": "Jour Tempo est déjà configuré."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "couleur_aujourdhui": {
+        "name": "Couleur Tempo aujourd'hui",
+        "state": { "bleu": "Bleu", "blanc": "Blanc", "rouge": "Rouge" }
+      },
+      "couleur_demain": {
+        "name": "Couleur Tempo demain",
+        "state": { "bleu": "Bleu", "blanc": "Blanc", "rouge": "Rouge" }
+      },
+      "jours_restants_bleu": { "name": "Jours bleus restants" },
+      "jours_restants_blanc": { "name": "Jours blancs restants" },
+      "jours_restants_rouge": { "name": "Jours rouges restants" },
+      "ejp_aujourdhui": {
+        "name": "EJP aujourd'hui",
+        "state": { "ejp": "Jour EJP", "normal": "Jour normal", "non_verifie": "Pas encore publié", "hors_saison": "Hors saison" }
+      },
+      "ejp_demain": {
+        "name": "EJP demain",
+        "state": { "ejp": "Jour EJP", "normal": "Jour normal", "non_verifie": "Pas encore publié", "hors_saison": "Hors saison" }
+      },
+      "ejp_jours_restants": { "name": "Jours EJP restants" }
+    },
+    "binary_sensor": {
+      "demain_rouge": { "name": "Demain rouge" }
+    }
+  }
+}

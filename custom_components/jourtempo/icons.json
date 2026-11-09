@@ -1,0 +1,17 @@
+{
+  "entity": {
+    "sensor": {
+      "couleur_aujourdhui": { "default": "mdi:calendar-today" },
+      "couleur_demain": { "default": "mdi:calendar-arrow-right" },
+      "jours_restants_bleu": { "default": "mdi:calendar-blank" },
+      "jours_restants_blanc": { "default": "mdi:calendar-blank-outline" },
+      "jours_restants_rouge": { "default": "mdi:calendar-alert" },
+      "ejp_aujourdhui": { "default": "mdi:flash-alert" },
+      "ejp_demain": { "default": "mdi:flash-alert-outline" },
+      "ejp_jours_restants": { "default": "mdi:counter" }
+    },
+    "binary_sensor": {
+      "demain_rouge": { "default": "mdi:alert", "state": { "off": "mdi:check-circle-outline" } }
+    }
+  }
+}

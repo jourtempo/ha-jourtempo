@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Jour Tempo",
+        "description": "Today's and tomorrow's EDF Tempo colour and EJP day, from the free jourtempo.fr API. No key or account needed: submit to add the sensors."
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach jourtempo.fr. Check Home Assistant's internet connection and try again."
+    },
+    "abort": {
+      "already_configured": "Jour Tempo is already configured.",
+      "single_instance_allowed": "Jour Tempo is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "couleur_aujourdhui": {
+        "name": "Tempo colour today",
+        "state": { "bleu": "Blue", "blanc": "White", "rouge": "Red" }
+      },
+      "couleur_demain": {
+        "name": "Tempo colour tomorrow",
+        "state": { "bleu": "Blue", "blanc": "White", "rouge": "Red" }
+      },
+      "jours_restants_bleu": { "name": "Blue days left" },
+      "jours_restants_blanc": { "name": "White days left" },
+      "jours_restants_rouge": { "name": "Red days left" },
+      "ejp_aujourdhui": {
+        "name": "EJP today",
+        "state": { "ejp": "EJP day", "normal": "Normal day", "non_verifie": "Not published yet", "hors_saison": "Off season" }
+      },
+      "ejp_demain": {
+        "name": "EJP tomorrow",
+        "state": { "ejp": "EJP day", "normal": "Normal day", "non_verifie": "Not published yet", "hors_saison": "Off season" }
+      },
+      "ejp_jours_restants": { "name": "EJP days left" }
+    },
+    "binary_sensor": {
+      "demain_rouge": { "name": "Red tomorrow" }
+    }
+  }
+}
